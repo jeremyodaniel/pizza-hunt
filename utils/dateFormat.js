@@ -1,3 +1,4 @@
+const dateFormat = require('../utils/dateFormat');
 const addDateSuffix = date => {
   let dateStr = date.toString();
 
@@ -17,7 +18,8 @@ const addDateSuffix = date => {
   return dateStr;
 };
 
-// function to format a timestamp, accepts the timestamp and an `options` object as optional parameters
+// function to format a timestamp, accepts the timestamp and an `options` 
+// object as optional parameters
 module.exports = (
   timestamp,
   { monthLength = 'short', dateSuffix = true } = {}
